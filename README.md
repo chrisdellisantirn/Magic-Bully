@@ -1,5 +1,5 @@
 <p align="center">
-<a href="url"><img src="magic_bully.jpg" height="275"></a>
+<a href="url"><img src="banner.jpg" height="275"></a>
 
 # **Magic Bully**
 ## **Description:** Magic Bully generates random Powerball lottery picks from number pools assigned probability weights from historical draw frequency.  
