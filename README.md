@@ -12,7 +12,7 @@ Powerball is an American lottery game that began on April 22, 1992, across 15 pa
 - Select five numbers from 1 to 69 for the white balls; then select one number from 1 to 26 for the red Powerball.
 - The jackpot grows until won.
 - Players win a prize by matching one of the 9 ball combinations.
-- [Official Powerball website](http://www.powerball.com/games/home)
+- [Official Powerball website](http://www.powerball.com/games/home) 
 
 ## **Prizes and Odds**
 <a href="url"><img src="powerball_prize_chart.png" height="350"></a>
@@ -37,3 +37,8 @@ white_balls = ['1', '2', '3', '4', '5', '6']
 probability = [0.1, 0.15, 0.6, 0.05, 0.03, 0.07]
 random.choice(a=white_balls, size= 5, replce=False, p=probability)
 ```
+## **Insights**
+1. The most common white ball (1-69) number has been 61 showing up 2% of the time, while the least commonly picked number has been 26 which has occurred 1% of the time. 
+    - The probability range in the white set is minuscule and very close to the actual probability of being picked which is 1.45%
+2. The most common Powerball (1-26) has been 24 which has occurred 5.7% of the time, while the least common number 23 has occurred only 2.6% of the time.
+    - The probability range is much larger in the Powerball set, which has an actual probability of being picked at 3.85%.
