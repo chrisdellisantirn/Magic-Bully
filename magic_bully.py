@@ -105,17 +105,20 @@ def generate_picks(white, red, color, lucky_number):
         for _ in range(5):
             wb = array(random.choice(white_balls, 4, replace=False, p=white_probs)).tolist()
             rb = array(random.choice(red_balls, 1, replace=False, p=red_probs)).tolist()
-            picks.append(f"{ln + wb}{rb}")
+            swb = wb.sort()
+            picks.append(f"{ln + swb}{rb}")
         return(picks)
     elif color == 'red':
         for _ in range(5):
             wb = array(random.choice(white_balls, 5, replace=False, p=white_probs)).tolist()
+            swb = wb.sort()
             picks.append(f"{wb}{ln}")
         return(picks)
     else:
         for _ in range(5):
             wb = array(random.choice(white_balls, 5, replace=False, p=white_probs)).tolist()
             rb = array(random.choice(red_balls, 1, replace=False, p=red_probs)).tolist()
+            swb = wb.sort()
             picks.append(f"{wb}{rb}")
         return(picks)
 
